@@ -15,4 +15,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>visacard-releases</id>
+      <name>visacard-releases</name>
+      <url>http://ec2-3-22-216-62.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/visacard-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>visacard-snapshots</id>
+      <name>visacard-snapshots</name>
+      <url>http://ec2-3-22-216-62.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/visacard-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>

@@ -3,7 +3,7 @@ node('maven-label') {
    
    stage('Preparation') { // for display purposes
       
-      git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+      git branch: '${branch}', url: 'https://github.com/DevopsNov19/visacard.git'
         
       mvnHome = tool name: 'maven-3.3.9', type: 'maven'
    }

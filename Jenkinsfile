@@ -19,4 +19,8 @@ node('maven-label') {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive 'target/*.jar'
    }
+   
+stage('sayhello') { 
+  sayHello "Edureka"
+   }   
    }

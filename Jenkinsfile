@@ -1,4 +1,5 @@
-node('maven-label') {
+@Library('pipeline-library-demo')_
+ node('maven-label') {
    
    
    stage('Preparation') { // for display purposes

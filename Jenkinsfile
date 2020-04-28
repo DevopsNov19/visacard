@@ -1,5 +1,11 @@
 @Library('pipeline-library-demo')_
- node('maven-label') {
+def greet(String name = 'human') {
+ echo "GoodMorning, ${name}."
+ 
+}
+
+
+node('maven-label') {
    
    
    stage('Preparation') { // for display purposes
@@ -23,5 +29,6 @@
    
 stage('sayhello') { 
   sayHello "Edureka"
+ greet "Raj" 
    }   
    }
